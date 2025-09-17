@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,46 +9,60 @@
   <body>
     <header>
       <nav>
-        <a href="#"> <img src="" alt="" /> LOGO </a>
-        <ul class="header-menu">
-          <li class="header-menu-item">
-            <a class="heder-menu-link" href="#company-sactions">Про нас</a>
+        <a href="/">
+          <img src="img/logo.svg" alt="" />
+        </a>
+        <ul class="header-nav">
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="#company-section">Про нас</a>
           </li>
-          <li class="header-menu-item">
-            <a class="heder-menu-link" href="#advantages-section">Чому ми</a>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="#advantages-section">Чому ми</a>
           </li>
-          <li class="header-menu-item">
-            <a class="heder-menu-link" href="#services-section"
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="#services-section"
               >Наші процедури</a
             >
           </li>
-          <li class="header-menu-item">
-            <a class="heder-menu-link" href="#contacts-section">Контакти</a>
-          </li>
-        </ul>
-        <ul class="header-socials">
-          <li class="header-social-item">
-            <a href="#">Whatsapp</a>
-          </li>
-          <li class="header-social-item">
-            <a href="#">facebook</a>
-          </li>
-          <li class="header-social-item">
-            <a href="#">Instagram</a>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="#contacts-section">Контакти</a>
           </li>
         </ul>
       </nav>
+      <ul class="header-socials">
+        <li class="header-social-item">
+          <a href="#">
+            <svg class="" width="32" height="32">
+              <use href="./img/symbol-defs.svg#icon-whatsapp"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="header-social-item">
+          <a href="#">
+            <svg class="" width="32" height="32">
+              <use href="./img/symbol-defs.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="header-social-item">
+          <a href="#">
+            <svg class="" width="32" height="32">
+              <use href="./img/symbol-defs.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
     </header>
     <main>
       <section class="hero-section">
-        <p>Косметологічна клініка</p>
-        <h1>Beauty Zone</h1>
-        <button type="button">Замовити дзвінок</button>
-        <p>Запишись та отримай безкоштовну консультацію нашого косметолога</p>
-        <img src="" alt="" />
+        <p class="hero-section-description">Косметологічна клініка</p>
+        <h1 class="hero-section-title">Beauty Zone</h1>
+        <button type="button" class="hero-section-button">Замовити дзвінок</button>
+        <p class="hero-section-text">Запишись та отримай безкоштовну консультацію нашого косметолога</p>
+        <img src="./img/women on procedure-main (1).jpg" alt="" />
       </section>
-      <section class="company-saction" id="company-saction">
-        <h3>Перевтілюйтесь в <span> beauty zone! </span></h3>
+      <section class="company-section" id="company-section">
+        <h3 class="section-title">Перевтілюйтесь в <span class="section-title-span"> Beauty zone! </span></h3>
         <p>
           Наша косметологічна клініка пропонує вам професійні послуги з догляду
           за шкірою обличчя та тіла.
@@ -58,57 +72,92 @@
           приємний сервіс. Наші косметологічні процедури та препарати допоможуть
           вам підтримувати свою красу та молодість. З нами краса назавжди!
         </p>
-        <img src="" alt="" />
-        <img src="" alt="" />
-        <img src="" alt="" />
-        <img src="" alt="" />
+        <img
+          src="./img/face-women-before.jpg"
+          alt="Woman's face before the procedure"
+        />
+        <img
+          src="img/face-woman-after.jpg"
+          alt="Woman's face after the procedure"
+        />
+        <img src="./img/Star 2.png" alt="star" />
+        <img src="./img/Star 3.png" alt="star" />
+        <img src="./img/Star 1.png" alt="star" />
       </section>
       <section class="advantages-section" id="advantages-section">
-        <h3>Чому люди <span>обирають нас</span></h3>
+        <h3 class="section-title">Чому люди <span class="section-title-span">обирають нас</span></h3>
         <ul>
           <li>
-            <img src="" alt="" />
-            <p>
-              Всі наші косметологи мають вищу медичну освіту та стаж роботи від
-              5 років
-            </p>
+            <article>
+              <svg class="advantages-icon" width="48" height="48">
+                <use href="./img/symbol-defs.svg#icon-react"></use>
+              </svg>
+              <p>
+                Всі наші косметологи мають вищу медичну освіту та стаж роботи
+                від 5 років
+              </p>
+            </article>
           </li>
           <li>
-            <img src="" alt="" />
-            <p>
-              Використовуємо тільки професійне обладнання та косметику,
-              перевірену часом
-            </p>
+            <article>
+              <svg class="advantages-icon" width="48" height="48">
+                <use href="./img/symbol-defs.svg#icon-cosmetic"></use>
+              </svg>
+              <p>
+                Використовуємо тільки професійне обладнання та косметику,
+                перевірену часом
+              </p>
+            </article>
           </li>
           <li>
-            <img src="" alt="" />
-            <p>
-              Наша мета - підкреслити переваги та приховати недоліки, а не
-              переробити
-            </p>
+            <article>
+              <svg class="advantages-icon" width="48" height="48">
+                <use href="./img/symbol-defs.svg#icon-crown"></use>
+              </svg>
+              <p>
+                Наша мета - підкреслити переваги та приховати недоліки, а не
+                переробити
+              </p>
+            </article>
           </li>
         </ul>
       </section>
       <section class="services-section" id="services-section">
-        <h3>Наші <span> процедури </span></h3>
+        <h3 class="section-title">Наші <span class="section-title-span"> процедури </span></h3>
         <ul>
           <li>
-            <img src="" alt="" />
+            <img
+              src="./img/procedure-face-cream.jpg"
+              alt="Procedure on woman's face"
+            />
             <p>Маски для обличчя</p>
           </li>
           <li>
-            <img src="" alt="" />
+            <img
+              src="img/procedure-forehead-drug.jpg"
+              alt="injection  on woman's face"
+            />
             <p>Ін'єкції для обличчя</p>
           </li>
           <li>
-            <img src="" alt="" />
+            <img src="img/sleepy-woman.jpg" alt="Face clean" />
             <p>Очищення обличчя</p>
           </li>
         </ul>
       </section>
       <section class="contacts-section" id="contacts-section">
-        <h3>Як нас <span> знайти </span></h3>
-        <div></div>
+        <h3 class="section-title">Як нас <span class="section-title-span"> знайти </span></h3>
+        <div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20323.5969260622!2d30.529257305332543!3d50.45135164998463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8b5f6338d%3A0x25c7f06ad686451c!2sTarasa%20Shevchenko%20Blvd%2C%205%2C%20Kyiv%2C%2002000!5e0!3m2!1sen!2sua!4v1758045269565!5m2!1sen!2sua"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
         <div>
           <form>FORM</form>
         </div>
@@ -116,24 +165,26 @@
     </main>
     <footer>
       <nav>
-        <a href="#"> <img src="" alt="" /> LOGO </a>
-        <ul class="header-menu">
-          <li class="">
-            <a class="" href="#company-sactions">Про нас</a>
+        <a href="/">
+          <img src="img/logo.svg" alt="" />
+        </a>
+        <ul class="footer-nav">
+          <li class="footer-nav-item">
+            <a class="footer-nav-link" href="#company-section">Про нас</a>
           </li>
-          <li class="">
-            <a class="" href="#advantages-section">Чому ми</a>
+          <li class="footer-nav-item">
+            <a class="footer-nav-link" href="#advantages-section">Чому ми</a>
           </li>
-          <li class="">
-            <a class="" href="#services-section">Наші процедури</a>
+          <li class="footer-nav-item">
+            <a class="footer-nav-link" href="#services-section">Наші процедури</a>
           </li>
-          <li class="">
-            <a class="" href="#contacts-section">Контакти</a>
+          <li class="footer-nav-item">
+            <a class="footer-nav-link" href="#contacts-section">Контакти</a>
           </li>
         </ul>
       </nav>
       <address>
-        <ul>
+        <ul class="footer-address">
           <li>
             <a href="tel:+">+ 38 (096) 000 00 07</a>
           </li>
@@ -147,23 +198,34 @@
           </li>
         </ul>
       </address>
-      <ul class="">
-        <li class="">
-          <a href="#">Whatsapp</a>
+      <ul class="footer-socials">
+        <li class="footer-social-item">
+          <a href="#">
+            <svg class="" width="32" height="32">
+              <use href="./img/symbol-defs.svg#icon-whatsapp"></use>
+            </svg>
+          </a>
         </li>
-        <li class="">
-          <a href="#">facebook</a>
+        <li class="footer-social-item">
+          <a href="#">
+            <svg class="" width="32" height="32">
+              <use href="./img/symbol-defs.svg#icon-facebook"></use>
+            </svg>
+          </a>
         </li>
-        <li class="">
-          <a href="#">Instagram</a>
+        <li class="footer-social-item">
+          <a href="#">
+            <svg class="" width="32" height="32">
+              <use href="./img/symbol-defs.svg#icon-instagram"></use>
+            </svg>
+          </a>
         </li>
       </ul>
       <div class="">
-              <a class="" href="#" target="_blank"
-                >Політика конфіденційності</a
-              >
-              <p class="">&copy; 2022 Дані захищені</p>
-            </div>
+        <a href="#" target="_blank">Політика конфіденційності</a>
+        <p class="footer-text-author">&copy; 2022 Дані захищені</p>
+      </div>
+      <!-- <img src="./img/#" alt=""> --> 
     </footer>
     <script src="./JS/main.js"></script>
   </body>
