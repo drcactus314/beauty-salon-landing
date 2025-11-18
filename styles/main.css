@@ -2,6 +2,12 @@
 @import url(./reset.css);
 @import url(./variables.css);
 
+
+/* Styles for whole page */
+*{
+  box-sizing: border-box;
+}
+
 /* Base styles */
 
 body {
@@ -26,6 +32,15 @@ img {
   height: auto;
   object-fit: cover;
 }
+/* Чому не можна поставити цей контейнер поверх всієї сторінки? */
+/* Тут ми добавили до ширини відступи від падінгів */
+.container{
+  width: 100%;
+  max-width: 1288px;
+  margin: 0 auto;
+  padding: 0 24px;
+} 
+
 
 /* Titles */
 
@@ -48,16 +63,23 @@ img {
 
 /* Hero Section */
 
-.hero-section-title {
+.hero-section{
+  padding: 17px 0px 63px;
+}
+
+.hero-section-description{
+  margin-bottom: 16px;
+}
+
+.hero-title {
   font-family: Play;
   font-size: 140px;
   font-weight: 700;
   color: var(--color-primary-blue);
+  margin-bottom: 40px;
 }
 
 .hero-section-button {
-  width: 220px;
-  height: 55px;
   border-radius: 32px;
   border: 1px solid var(--color-primary-blue);
   background-color: var(--color-primary-blue);
@@ -65,6 +87,8 @@ img {
   font-family: Roboto;
   font-size: 18px;
   font-weight: 600;
+  padding: 16px 32px;
+  margin-bottom: 14px;
 }
 
 .hero-section-button:hover{
@@ -72,11 +96,54 @@ img {
   color: var(--color-primary-dark);
   cursor: pointer;
 }
+
+/* Company section */
+
+/* Прописав до кожнї секції окремий паддінг, оскільки для всіх давати один в цьому лендінгу не ок, бо потім ще купа разів добавити чи видалити деталі, краще зразу прописав. */
+
+.company-section{
+  padding: 63px 0px 98px; 
+}
+
+.company-title{
+  margin-bottom: 40px;
+}
+
 /* Advantages section */
+
+.advantages-section{
+  padding: 98px 0px 48px;
+}
 
 .advantages-icon{
   fill: var(--color-primary-blue);
 }
+
+.advantages-title{
+  margin-bottom: 48px;
+}
+
+/* Services section */
+
+.services-section{
+  padding: 48px 0px;
+}
+
+.services-title{
+  margin-bottom: 48px;
+}
+
+
+/* Contacts section */
+
+.contacts-section{
+  padding: 48px 0px 96px;
+}
+
+.contacts-title{
+  margin-bottom: 48px;
+}
+
 
 /* Footer Section */
 footer {
