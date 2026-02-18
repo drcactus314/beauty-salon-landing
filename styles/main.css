@@ -2,9 +2,8 @@
 @import url(./reset.css);
 @import url(./variables.css);
 
-
 /* Styles for whole page */
-*{
+* {
   box-sizing: border-box;
 }
 
@@ -32,15 +31,18 @@ img {
   height: auto;
   object-fit: cover;
 }
-/* Чому не можна поставити цей контейнер поверх всієї сторінки? */
+.text-bold {
+  font-weight: bold;
+}
+/* Чому не можна поставити цей контейнер поверх всієї сторінки?  Або просто поверх потрібних секторів?*/
 /* Тут ми добавили до ширини відступи від падінгів */
-.container{
+
+.container {
   width: 100%;
   max-width: 1288px;
   margin: 0 auto;
   padding: 0 24px;
-} 
-
+}
 
 /* Titles */
 
@@ -48,6 +50,7 @@ img {
   font-family: Play;
   font-size: 64px;
   font-weight: 900;
+  line-height: 1.1;
 }
 
 .section-title-span {
@@ -61,13 +64,68 @@ img {
   color: var(--color-primary-blue);
 }
 
-/* Hero Section */
+/* Чи можна так робити відступ для сторінки? */
 
-.hero-section{
-  padding: 17px 0px 63px;
+.header-container {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
-.hero-section-description{
+/* Чи можу я так називати класи, якщо вони спеціально для  флексів? Або добавляти його, де слід. Знаю, що там далі scss і там по-іншому */
+
+.header-container-flex {
+  display: flex;
+}
+
+.header-nav {
+  display: flex;
+  flex-grow: 1;
+}
+
+.header-nav-list {
+  display: flex;
+  gap: 56px;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-socials {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+
+/* Hero Section */
+
+.hero-section {
+  padding: 17px 0px 63px;
+  background-image:
+    linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.850898) 41.31%,
+      rgba(255, 255, 255, 0.193204) 58.65%,
+      rgba(255, 255, 255, 0) 72.78%
+    ),
+    url('../img/hero-photo.jpg');
+  /* background-color: aqua; */
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
+  background-position:
+    left top,
+    right;
+}
+
+.hero-container-flex {
+  display: flex;
+}
+
+.hero-container {
+  max-width: 680px;
+  padding-left: 106px;
+}
+
+.hero-section-description {
   margin-bottom: 16px;
 }
 
@@ -75,6 +133,7 @@ img {
   font-family: Play;
   font-size: 140px;
   font-weight: 700;
+  line-height: 0.8;
   color: var(--color-primary-blue);
   margin-bottom: 40px;
 }
@@ -91,7 +150,7 @@ img {
   margin-bottom: 14px;
 }
 
-.hero-section-button:hover{
+.hero-section-button:hover {
   background-color: transparent;
   color: var(--color-primary-dark);
   cursor: pointer;
@@ -101,47 +160,202 @@ img {
 
 /* Прописав до кожнї секції окремий паддінг, оскільки для всіх давати один в цьому лендінгу не ок, бо потім ще купа разів добавити чи видалити деталі, краще зразу прописав. */
 
-.company-section{
-  padding: 63px 0px 98px; 
+.company-section {
+  padding: 63px 0px 88px;
 }
 
-.company-title{
+.company-container-flex {
+  display: flex;
+  gap: 32px;
+  /* justify-content: space-between; */
+}
+
+.company-title {
   margin-bottom: 40px;
+}
+
+.company-text-content {
+  max-width: 710px;
+}
+
+.company-text-description {
+  font-size: 22px;
+  line-height: 1.7;
+}
+
+.text-description {
+  margin-bottom: 40px;
+}
+.company-media-photo {
+  border-radius: 50%;
 }
 
 /* Advantages section */
 
-.advantages-section{
-  padding: 98px 0px 48px;
+.advantages-section {
+  padding: 88px 0px 48px;
+  background-image: url('../img/background-advantages.png');
+  background-repeat: no-repeat;
+  background-position-y: 30px;
+  background-size: cover;
 }
 
-.advantages-icon{
+.advantages-icon {
   fill: var(--color-primary-blue);
 }
 
-.advantages-title{
-  margin-bottom: 48px;
+.advantages-container-box {
+  max-width: 1070px;
+  margin: 0 auto;
 }
 
+.advantages-title-container {
+  max-width: 432px;
+  margin: 0 auto;
+}
+
+.advantages-title {
+  margin-bottom: 48px;
+  text-align: center;
+}
+.advantages-list {
+  display: flex;
+  justify-content: space-between;
+}
+.advantages-list-container {
+  max-width: 316px;
+  text-align: center;
+  background-color: var(--color-primary-white);
+  border-radius: 32px;
+}
+.advantages-article {
+  padding: 24px 32px;
+}
 /* Services section */
 
-.services-section{
+.services-section {
   padding: 48px 0px;
 }
 
-.services-title{
+.services-title {
   margin-bottom: 48px;
 }
 
+.services-title-container {
+  text-align: center;
+}
 
+.services-cards-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.services-container-flex {
+  display: flex;
+  gap: 16px;
+  text-align: center;
+}
+.services-button {
+  padding: 0;
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 1px solid var(--color-primary-dark);
+  background-color: transparent;
+}
+.services-button-degree {
+  transform: rotate(180deg);
+}
+
+.services-container-photo {
+  border-radius: 4px 120px;
+}
 /* Contacts section */
 
-.contacts-section{
+.contacts-section {
   padding: 48px 0px 96px;
 }
 
-.contacts-title{
+.contacts-title {
   margin-bottom: 48px;
+}
+
+.contacts-title-container {
+  text-align: center;
+}
+
+.contacts-container-flex {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  max-height: 480px;
+}
+.contacts-map {
+  border-radius: 32px;
+}
+.contacts-form-container {
+  width: 425px;
+  height: 480px;
+  padding: 48px 56px;
+  color: var(--color-primary-white);
+  background-color: var(--color-primary-dark);
+  border-radius: 32px;
+  background-image: url('../img/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.contacts-form-title{
+  font-size: 22px;
+  line-height: 1.3;
+  text-align: center;
+  font-weight: 600;
+}
+
+.contacts-form-item{
+  margin-top: 16px;
+}
+
+.form-item-position{
+  margin-top: 32px;                         /*Як мені тут було б добре зробити, бо позиціонування цечерез марджин це звісно добре, але мені б хотілось щось більш правильне. Бо як ти зрозумів, я тут спеціально поміняв місцями, щоб нижнє перекрило верхнє.*/
+}
+.input-control{
+  width: 100%;
+  height: 52px;
+  background-color: transparent;
+  border: 2px solid var(--color-brand-gray);
+  border-radius: 32px;
+  padding-left: 32px;
+}
+
+.input-control::placeholder{
+  color: var(--color-primary-white);
+}
+
+.contacts-button{
+  display: block;    /*Як мені тут треба було центрувати кнопку правильно?*/
+  width: 280px;
+  height: 52px;
+  color: var(--color-primary-white);
+  background-color: var(--color-primary-blue);
+  border: 1px solid var(--color-primary-blue);                     
+  border-radius: 32px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0 auto;                              
+}
+
+.form-text-policy{
+  padding-top: 8px;
+  font-size: 12px;
+  color: var(--color-brand-gray);
+  text-align: center;
 }
 
 
@@ -156,15 +370,46 @@ footer {
   background-position: center;
 }
 
-.footer-nav-link:hover, 
+.footer-nav-link:hover,
 .footer-address li:hover {
   color: var(--color-primary-blue);
 }
-.footer-social-item{
+.footer-social-item {
   fill: var(--color-primary-white);
 }
 
-.footer-text-author{
+.footer-text-author {
   color: var(--color-brand-gray);
 }
+.footer-container-flex {
+  padding: 56px 0;
+  display: flex;
+  justify-content: space-between;
+}
 
+.footer-nav-item + .footer-nav-item{     /*Про е дізнався в чат ГПТ, знаю як через last child. Як часто так роблять як я і чи є щось краще за такий спосіб?*/
+  padding-top: 16px;
+} 
+
+.footer-address-item + .footer-address-item{
+  padding-top: 16px;
+}
+
+.address-container {
+  max-width: 192px;
+}
+
+.footer-socials{
+  padding-top: 16px;
+}
+
+.socials-container-flex {
+  padding-top: 16px;
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 24px;
+}
+.footer-text-author{
+  padding-top: 16px;
+  font-size: 12px;
+}
