@@ -11,7 +11,7 @@
 
 /* Base styles */
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -37,6 +37,7 @@ img {
   height: auto;
   object-fit: cover;
 }
+
 .text-bold {
   font-weight: bold;
 }
@@ -48,16 +49,16 @@ img {
   padding: 0 24px;
 }
 
-.transition-scale-el{
+.transition-scale-el {
   transition: transform 0.2s;
 }
 
-.transition-scale-el:hover{
+.transition-scale-el:hover {
   transform: scale(1.1);
-  cursor: pointer
+  cursor: pointer;
 }
 
-.visually-hidden{
+.visually-hidden {
   position: absolute;
   left: -10000;
   top: auto;
@@ -81,7 +82,7 @@ img {
 
 /* Header Section */
 
-.header{
+.header {
   width: 100%;
   position: relative;
   z-index: 10;
@@ -89,8 +90,10 @@ img {
   backdrop-filter: blur(2px);
 }
 
-.header-nav-link{
-  transition: color 0.5s, 0.5s;
+.header-nav-link {
+  transition:
+    color 0.5s,
+    0.5s;
 }
 
 .header-nav-link:hover {
@@ -140,11 +143,11 @@ img {
   gap: 32px;
 }
 
-.header-social-icon{
+.header-social-icon {
   transition-duration: 0.3s;
 }
 
-.header-social-icon:hover{
+.header-social-icon:hover {
   transform: scale(1.1);
 }
 
@@ -188,7 +191,10 @@ img {
   font-weight: 600;
   padding: 16px 32px;
   margin-bottom: 14px;
-  transition: color 0.5s, background-color 0.5s, 0.2s;
+  transition:
+    color 0.5s,
+    background-color 0.5s,
+    0.2s;
 }
 
 .hero-section-button:hover {
@@ -198,9 +204,13 @@ img {
   transform: scale(1.1);
 }
 
+.hero-section-text {
+  font-size: 12px;
+}
+
 /* Company section */
 
-.company-section{
+.company-section {
   padding-top: 40px;
 }
 
@@ -226,37 +236,37 @@ img {
   margin-bottom: 40px;
 }
 
-.company-media{
+.company-media {
   position: relative;
 }
 
 .company-media-photo {
   border-radius: 50%;
-  
 }
 
-
-.media-photo-left{
+.media-photo-left {
   margin-top: 40px;
   margin-left: 172px;
 }
 
-.company-media-star1,.company-media-star2,.company-media-star3 {
+.company-media-star1,
+.company-media-star2,
+.company-media-star3 {
   position: absolute;
 }
-.company-media-star1{
+.company-media-star1 {
   top: 32px;
   right: -24px;
   animation: spin-star1 2s 3 linear 3s;
 }
 
-.company-media-star2{
+.company-media-star2 {
   top: 40%;
   right: 5px;
   animation: spin-star2 2s 3 ease-in-out 3s;
 }
 
-.company-media-star3{
+.company-media-star3 {
   top: 50%;
   left: 30%;
   animation: spin-star3 2s 3 linear 3s;
@@ -264,17 +274,15 @@ img {
 
 /* Advantages section */
 
-
-.wave-backraund-wrapper{
+.wave-backraund-wrapper {
   background-image: url('../img/background-advantages.png');
   background-repeat: no-repeat;
-  background-position-y: 30px;
-  background-size: cover;
+  background-position: center top;
+  background-size: 100% 1550px;
 }
 
 .advantages-section {
   padding: 176px 0px 48px;
- 
 }
 
 .advantages-icon {
@@ -296,19 +304,28 @@ img {
   margin-bottom: 48px;
   text-align: center;
 }
+
 .advantages-list {
   display: flex;
   justify-content: space-between;
 }
+
 .advantages-list-container {
   max-width: 316px;
+  height: 181px;
   text-align: center;
   background-color: var(--color-primary-white);
   border-radius: 32px;
 }
+
 .advantages-article {
   padding: 24px 32px;
 }
+
+.advantages-text-description {
+  line-height: 1.33;
+}
+
 /* Services section */
 
 .services-section {
@@ -349,7 +366,7 @@ img {
   transition: 0.2s;
 }
 
-.services-button:hover{
+.services-button:hover {
   cursor: pointer;
   transform: rotate(1turn) scale(1.2);
 }
@@ -362,8 +379,31 @@ img {
   transform: rotate(1.5turn) scale(1.2);
 }
 
-.services-container-photo {
+.services-container-list{
+  position: relative;
   border-radius: 4px 120px;
+  overflow: hidden;
+}
+
+.services-container-list::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180.05deg, rgba(1, 28, 68, 0) 48.53%, rgba(1, 28, 68, 0.725825) 84.61%, #011C44 101.39%);
+}
+
+.services-container-text{
+  width: 152px;
+  position: absolute;
+  right: 77px;
+  bottom: 32px;
+  z-index: 2;
+  font-size: 22px;
+  line-height: 1.2;
+  color: var(--color-primary-white);
 }
 
 /* Contacts section */
@@ -413,7 +453,7 @@ img {
 }
 
 .form-item-position {
-  margin-top: 32px; 
+  margin-top: 32px;
 }
 .input-control {
   width: 100%;
@@ -423,7 +463,9 @@ img {
   border-radius: 32px;
   padding-left: 32px;
   outline: none;
-  transition: color 0.2s, border-color 0.2s;
+  transition:
+    color 0.2s,
+    border-color 0.2s;
   color: var(--color-primary-white);
 }
 
@@ -431,11 +473,11 @@ img {
   color: var(--color-primary-white);
 }
 
-.input-control:hover{
+.input-control:hover {
   border-color: var(--color-primary-white);
 }
 
-.input-control:hover::placeholder{
+.input-control:hover::placeholder {
   color: var(--color-brand-gray);
 }
 
@@ -451,7 +493,9 @@ img {
   font-size: 16px;
   font-weight: 400;
   margin: 0 auto;
-  transition: transform 0.2s, background-color 0.2s;
+  transition:
+    transform 0.2s,
+    background-color 0.2s;
 }
 
 .contacts-button:hover {
@@ -467,7 +511,7 @@ img {
   text-align: center;
 }
 
-.form-text-policy:hover{
+.form-text-policy:hover {
   cursor: pointer;
 }
 
@@ -528,7 +572,7 @@ footer {
   font-size: 12px;
 }
 
-.footer-photo{
+.footer-photo {
   position: absolute;
   right: 0;
   bottom: 0;

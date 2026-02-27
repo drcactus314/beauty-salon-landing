@@ -61,22 +61,21 @@
   }
 }
 
-@keyframes icon-skew{
-
-   0% {
+@keyframes icon-skew {
+  0% {
     transform: rotateY(0deg);
   }
 
   25% {
-    transform: rotateY(70deg) ;
+    transform: rotateY(70deg);
   }
 
   50% {
-    transform: rotateY(0deg) ;
+    transform: rotateY(0deg);
   }
 
   75% {
-    transform: rotateY(-70deg) ;
+    transform: rotateY(-70deg);
   }
 
   100% {
