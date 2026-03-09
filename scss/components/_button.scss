@@ -1,0 +1,27 @@
+.button {
+  display: block; /*Як мені тут треба було центрувати кнопку правильно?*/
+  width: 240px;
+  height: 44px;
+  color: var(--color-primary-white);
+  background-color: var(--color-primary-blue);
+  border: 1px solid var(--color-primary-blue);
+  border-radius: 32px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0 auto;
+  transition:
+    transform 0.2s,
+    background-color 0.2s;
+
+    @media screen and (min-width: $bp-tablet) {
+    width: 280px;
+    height: 52px;
+    }
+
+  &:hover {
+    background-color: transparent;
+    cursor: pointer;
+    transform: scale(0.9);
+  }
+}

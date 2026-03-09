@@ -1,0 +1,11 @@
+.form-text-policy {
+  text-decoration: none;
+  padding-top: 8px;
+  font-size: 12px;
+  color: var(--color-brand-gray);
+  text-align: center;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

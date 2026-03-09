@@ -1,0 +1,9 @@
+.link{
+  transition: color 0.5s, 0.5s;
+}
+
+.link:hover {
+  font-weight: 700;
+  color: var(--color-primary-blue);
+  transform: scale(1.1);
+}

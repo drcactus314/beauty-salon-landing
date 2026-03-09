@@ -1,0 +1,109 @@
+.company-section {
+  padding-top: 50px;
+  
+  @media screen and (min-width: $bp-tablet) {
+    padding-top: 120px;
+  }
+  @media screen and (min-width: $bp-desktop) {
+    padding-top: 40px;
+  }
+
+  &__flex {
+    display: flex;
+    gap: 32px;
+  }
+
+  &__text {
+    max-width: 710px;
+  }
+
+  &__title {
+    position: relative;
+    margin-bottom: 24px;
+    line-height: 1.2;
+    z-index: 10;
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__description {
+    position: relative;
+    font-size: 18px;
+    line-height: 1.2;
+    z-index: 10;
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 22px;
+      line-height: 1.7;
+    }
+  }
+
+  &--text-margin {
+    margin-bottom: 16px;
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__media {
+    position: relative;
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+      position: relative;
+    }
+
+    &__photo {
+      border-radius: 50%;
+    }
+
+    &__left {
+      margin-top: 40px;
+      margin-left: 172px;
+    }
+
+    &__star1,
+    &__star2,
+    &__star3 {
+      position: absolute;
+    }
+
+    &__star2 {
+      top: 32px;
+      right: -24px;
+      animation: spin-star1 2s 3 linear 3s;
+    }
+    &__star3 {
+      top: 40%;
+      right: 5px;
+      animation: spin-star2 2s 3 ease-in-out 3s;
+    }
+
+    &__star1 {
+      top: 50%;
+      left: 30%;
+      animation: spin-star3 2s 3 linear 3s;
+    }
+
+    &__star-mobile-container {
+      display: block;
+      margin-top: 20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: end;
+      @media screen and (min-width: $bp-desktop) {
+        display: none;
+      }
+    }
+
+    &__star-mobile {
+      display: block;
+      width: 40px;
+      height: 40px;
+      @media screen and (min-width: $bp-desktop) {
+        display: none;
+      }
+    }
+  }
+}
