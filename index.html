@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./styles/styles.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
-/>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header class="header">
@@ -52,18 +54,68 @@
               </a>
             </li>
           </ul>
-          <button class="header__button" type="button">
+          <button class="header__button mobile-menu-btn-open" type="button">
             <svg class="" width="32" height="32">
-                  <use href="./img/icons.svg#icon-menu-burger"></use>
-                </svg>
+              <use href="./img/icons.svg#icon-menu-burger"></use>
+            </svg>
           </button>
+          <div class="mobile-menu">
+            <button
+              type="button"
+              class="mobile-menu__btn mobile-menu-btn-close">
+              <svg width="32" height="32">
+                <use href="./img/icons.svg#icon-close-btn"></use>
+              </svg>
+            </button>
+             <nav class="mobile-nav">
+            <a href="/"> <img src="img/logo.svg" alt="" /></a>
+            <ul class="mobile-nav__menu">
+              <li>
+                <a class="link" href="#company-section">Про нас</a>
+              </li>
+              <li>
+                <a class="link" href="#advantages-section">Чому ми</a>
+              </li>
+              <li>
+                <a class="link" href="#services-section">Наші процедури</a>
+              </li>
+              <li>
+                <a class="link" href="#contacts-section">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="mobile-nav__socials">
+            <li>
+              <a href="#" class=" mobile-nav__social-icon">
+                <svg class="header-social-icon" width="32" height="32">
+                  <use href="./img/icons.svg#icon-whatsapp"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="mobile-nav__social-icon">
+                <svg class="" width="32" height="32">
+                  <use href="./img/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="mobile-nav__social-icon">
+                <svg class="" width="32" height="32">
+                  <use href="./img/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+          </div>
         </div>
       </div>
     </header>
-      <img class="header-photo" src="./img/hero-photo2@.jpg" alt="" />
+    <img class="header-photo" src="./img/hero-photo2@.jpg" alt="" />
     <main>
       <section class="section hero-section">
-      <img class="header-photo-mobile" src="./img/mobile-hero.png" alt="" />
+        <img class="header-photo-mobile" src="./img/mobile-hero.png" alt="" />
         <div class="container hero-section__flex">
           <div class="hero-section__container">
             <p class="hero-section__description">Косметологічна клініка</p>
@@ -89,7 +141,9 @@
                 Перевтілюйтесь в
                 <span class="section-title-span"> Beauty zone! </span>
               </h3>
-              <p class="company-section__description company-section--text-margin">
+              <p
+                class="company-section__description company-section--text-margin"
+              >
                 Наша косметологічна клініка пропонує вам професійні послуги з
                 догляду за шкірою обличчя та тіла.
               </p>
@@ -101,15 +155,15 @@
                 З нами краса назавжди!
               </p>
               <div class="company-section__media__star-mobile-container">
-                 <img
-                src="./img/Star 1.png"
-                alt="star"
-                class="company-section__media__star-mobile"
-              />
+                <img
+                  src="./img/Star 1.png"
+                  alt="star"
+                  class="company-section__media__star-mobile"
+                />
               </div>
             </div>
             <div class="company-section__media">
-                <img
+              <img
                 class="company-section__media__photo"
                 src="./img/face-women-before.jpg"
                 alt="Woman's face before the procedure"
@@ -120,9 +174,9 @@
                 alt="Woman's face after the procedure"
               />
               <img
-              src="./img/Star 1.png"
-              alt="star"
-              class="company-section__media__star1"
+                src="./img/Star 1.png"
+                alt="star"
+                class="company-section__media__star1"
               />
               <img
                 src="./img/Star 2.png"
@@ -213,57 +267,57 @@
               </button>
               <div class="swiper">
                 <ul class="services-section__flex swiper-wrapper">
-                <li class="services-card swiper-slide">
-                  <img
-                    class="services-card__photo"
-                    src="./img/procedure-face-cream.jpg"
-                    alt="Procedure on woman's face"
-                  />
-                  <div class="services-card__text">
-                    <p>
-                      Маски <br />
-                      для обличчя
-                    </p>
-                  </div>
-                </li>
-                <li class="services-card swiper-slide">
-                  <img
-                    class="services-card__photo"
-                    src="img/procedure-forehead-drug.jpg"
-                    alt="injection  on woman's face"
-                  />
-                  <div class="services-card__text">
-                    <p>
-                      Ін'єкції <br />
-                      для обличчя
-                    </p>
-                  </div>
-                </li>
-                <li class="services-card swiper-slide">
-                  <img
-                    class="services-card__photo"
-                    src="img/sleepy-woman.jpg"
-                    alt="Face clean"
-                  />
-                  <div class="services-card__text">
-                    <p>Очищення обличчя</p>
-                  </div>
-                </li>
-                <li class="services-card swiper-slide">
-                  <img
-                    class="services-card__photo"
-                    src="./img/procedure-face-cream.jpg"
-                    alt="Procedure on woman's face"
-                  />
-                  <div class="services-card__text">
-                    <p>
-                      Маски <br />
-                      для обличчя
-                    </p>
-                  </div>
-                </li>
-              </ul>
-               <div class="pagination">
+                  <li class="services-card swiper-slide">
+                    <img
+                      class="services-card__photo"
+                      src="./img/procedure-face-cream.jpg"
+                      alt="Procedure on woman's face"
+                    />
+                    <div class="services-card__text">
+                      <p>
+                        Маски <br />
+                        для обличчя
+                      </p>
+                    </div>
+                  </li>
+                  <li class="services-card swiper-slide">
+                    <img
+                      class="services-card__photo"
+                      src="img/procedure-forehead-drug.jpg"
+                      alt="injection  on woman's face"
+                    />
+                    <div class="services-card__text">
+                      <p>
+                        Ін'єкції <br />
+                        для обличчя
+                      </p>
+                    </div>
+                  </li>
+                  <li class="services-card swiper-slide">
+                    <img
+                      class="services-card__photo"
+                      src="img/sleepy-woman.jpg"
+                      alt="Face clean"
+                    />
+                    <div class="services-card__text">
+                      <p>Очищення обличчя</p>
+                    </div>
+                  </li>
+                  <li class="services-card swiper-slide">
+                    <img
+                      class="services-card__photo"
+                      src="./img/procedure-face-cream.jpg"
+                      alt="Procedure on woman's face"
+                    />
+                    <div class="services-card__text">
+                      <p>
+                        Маски <br />
+                        для обличчя
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+                <div class="pagination">
                   <span class="pagination__button"></span>
                   <span class="pagination__button"></span>
                   <span class="pagination__button"></span>
@@ -301,61 +355,61 @@
               name="contacts-form"
               autocomplete="off"
             >
-          <div class="contact-section__form-container">
+              <div class="contact-section__form-container">
                 <h3 class="contacts-section__form-title">
-                Запишіться
-                <span class="section-title-span"> безкоштовно </span> <br />
-                та отримайте подарунок
-              </h3>
-              <div
-                class="contacts-section__form-field contacts-section__form-first input"
-              >
-                <label class="input__label" for="user-name"></label>
-                <input
-                  required
-                  class="input__control"
-                  type="text"
-                  name="user-name"
-                  id="user-name"
-                  placeholder="Ваше ім'я та прізвище"
-                  pattern="^[Є-ЯҐа-їґ]+\s[Є-ЯҐа-їґ]+$"
-                />
+                  Запишіться
+                  <span class="section-title-span"> безкоштовно </span> <br />
+                  та отримайте подарунок
+                </h3>
+                <div
+                  class="contacts-section__form-field contacts-section__form-first input"
+                >
+                  <label class="input__label" for="user-name"></label>
+                  <input
+                    required
+                    class="input__control"
+                    type="text"
+                    name="user-name"
+                    id="user-name"
+                    placeholder="Ваше ім'я та прізвище"
+                    pattern="^[Є-ЯҐа-їґ]+\s[Є-ЯҐа-їґ]+$"
+                  />
+                </div>
+                <div class="contacts-section__form-field input">
+                  <label class="input__label" for="user-phone"></label>
+                  <input
+                    required
+                    class="input__control"
+                    type="tel"
+                    name="user-phone"
+                    id="user-phone"
+                    placeholder="Ваш номер телефону"
+                    pattern="^\+380\d{9}$"
+                  />
+                </div>
+                <div class="contacts-section__form-field input">
+                  <label class="input__label" for="user-mail"></label>
+                  <input
+                    required
+                    class="input__control"
+                    type="email"
+                    name="user-mail"
+                    id="user-mail"
+                    placeholder="Ваш електронна пошта"
+                  />
+                </div>
+                <div class="contacts-section__form-field">
+                  <button type="submit" class="button contacts-section__button">
+                    Записатись безкоштовно
+                  </button>
+                </div>
+                <div class="form-text-policy">
+                  <a href="_blank">
+                    Натискаючи на кнопку я погоджуюсь з <br />
+                    <u> політикою конфіденційності </u>
+                  </a>
+                </div>
               </div>
-              <div class="contacts-section__form-field input">
-                <label class="input__label" for="user-phone"></label>
-                <input
-                  required
-                  class="input__control"
-                  type="tel"
-                  name="user-phone"
-                  id="user-phone"
-                  placeholder="Ваш номер телефону"
-                  pattern="^\+380\d{9}$"
-                />
-              </div>
-              <div class="contacts-section__form-field input">
-                <label class="input__label" for="user-mail"></label>
-                <input
-                  required
-                  class="input__control"
-                  type="email"
-                  name="user-mail"
-                  id="user-mail"
-                  placeholder="Ваш електронна пошта"
-                />
-              </div>
-              <div class="contacts-section__form-field">
-                <button type="submit" class="button contacts-section__button">
-                  Записатись безкоштовно
-                </button>
-              </div>
-              <div class="form-text-policy">
-                <a href="_blank">
-                  Натискаючи на кнопку я погоджуюсь з <br />
-                  <u> політикою конфіденційності </u>
-                </a>
-              </div>
-          </div>
             </form>
           </div>
         </div>
@@ -427,7 +481,9 @@
           </address>
 
           <div>
-            <a href="#" target="_blank" class="footer-section__policy">Політика конфіденційності</a>
+            <a href="#" target="_blank" class="footer-section__policy"
+              >Політика конфіденційності</a
+            >
             <p class="footer-section__terms">&copy; 2022 Дані захищені</p>
           </div>
         </div>
@@ -512,6 +568,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="./JS/services-slider.js"></script>
     <script src="./JS/modal.js"></script>
+    <script src="./JS/mobile-menu.js"></script>
     <script src="./JS/main.js"></script>
   </body>
 </html>

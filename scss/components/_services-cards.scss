@@ -1,6 +1,9 @@
+@use '../utils/variables' as *;
+
 .services-card {
   border-radius: 4px 90px;
   overflow: hidden;
+  
   @media screen and (min-width: $bp-tablet) {
     height: 456px;
     border-radius: 4px 110px;

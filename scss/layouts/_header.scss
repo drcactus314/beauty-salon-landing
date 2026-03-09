@@ -1,5 +1,4 @@
-// @media screen and (min-width: $bp-desktop) {
-// }
+@use '../utils/variables' as *;
 
 .header {
   width: 100%;
@@ -89,7 +88,6 @@
     -o-object-fit: cover;
     object-fit: cover;
   }
-
 }
 .header-photo-mobile {
   position: absolute;

@@ -1,3 +1,5 @@
+@use '../utils/variables' as *;
+
 footer {
   position: relative;
   background-color: var(--color-primary-dark);
@@ -39,12 +41,11 @@ footer {
 
   &__address-container {
     max-width: 192px;
-    &__items{
+    &__items {
       display: none;
       @media screen and (min-width: $bp-tablet) {
-      display: block;
-    }
-
+        display: block;
+      }
     }
   }
 

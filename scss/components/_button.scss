@@ -1,3 +1,5 @@
+@use '../utils/variables' as *;
+
 .button {
   display: block; /*Як мені тут треба було центрувати кнопку правильно?*/
   width: 240px;

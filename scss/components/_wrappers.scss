@@ -1,3 +1,5 @@
+@use '../utils/variables' as *;
+
 .wave-background-wrapper {
   background-image: url("../img/background-advantages.png");
   background-repeat: no-repeat;
