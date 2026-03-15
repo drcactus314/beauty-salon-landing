@@ -6,12 +6,21 @@
   left: 0;
   right: 0;
   bottom: 0;
-  padding: 0px 40px;
+  padding: 0px 8px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: rgb(0, 0, 0, 0.3);
   z-index: 10;
+  box-sizing: border-box;
+
+  @media screen and (min-width: $bp-mobile) {
+    padding: 0px 60px;
+  }
+
+  @media screen and (min-width: $bp-desktop) {
+    padding: 0px 40px;
+  }
 
   &--hidden {
     opacity: 0;
@@ -25,24 +34,54 @@
   width: 100%;
   max-width: 680px;
   height: 100%;
-  max-height: 720px;
+  max-height: 550px;
   background-image: url(../img/background.png);
   background-color: var(--color-primary-dark);
   border-radius: 32px;
   display: flex;
   justify-content: center;
-  padding-top: 40px;
+  padding-top: 0px;
   overflow-y: auto;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding-top: 40px;
+    max-height: 720px;
+  }
 
   &__button-close {
     position: absolute;
     top: 40px;
-    right: 40px;
+    right: 25px;
     background-color: transparent;
     border: transparent;
     fill: var(--color-primary-white);
     transition: transform 0.5s;
+
+    @media screen and (max-width: $bp-mobile) {
+      top: 40px;
+      right: 15px;
+    }
+
+    @media screen and (min-width: $bp-tablet) {
+      right: 40px;
+    }
   }
+
+  &__btn-cross{
+    width: 24px;
+    height: 24px;
+
+    @media screen and (max-width: $bp-mobile) {
+     width: 20px;
+    height: 20px;
+    }
+    @media screen and (min-width: $bp-tablet) {
+     width: 32px;
+    height: 32px;
+    }
+  }
+
+
 
   &__button-close:hover {
     cursor: pointer;
@@ -51,16 +90,18 @@
 }
 
 .modal-container {
-  max-width: 435px;
+  width: 435px;
+
 
   &__title {
     margin-top: 40px;
     font-family: Play;
     font-weight: 700;
-    font-size: 32px;
+    font-size: 24px;
     color: var(--color-primary-white);
     text-align: center;
     line-height: 1.1;
+
 
     @media screen and (min-width: $bp-tablet) {
       font-size: 64px;
@@ -88,7 +129,7 @@
     text-align: center;
     font-weight: 600;
     color: var(--color-primary-white);
-
+    
     @media screen and (min-width: $bp-tablet) {
       font-size: 22px;
     }
