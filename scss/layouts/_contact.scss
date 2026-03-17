@@ -3,7 +3,7 @@
 .contacts-section {
   padding: 20px 0px 0px;
 
-  @media screen and (min-width: $bp-tablet) {
+  @media screen and (min-width: $bp-desktop) {
     padding: 48px 0px 96px;
   }
 
@@ -32,7 +32,7 @@
     height: 232px;
     padding: 0;
     width: 100vw;
-    @media screen and (min-width: $bp-tablet) {
+    @media screen and (min-width: $bp-desktop) {
       height: 480px;
       width: 600px;
       border-radius: 32px;

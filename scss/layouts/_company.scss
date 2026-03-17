@@ -1,7 +1,7 @@
 @use '../utils/variables' as *;
 
 .company-section {
-  padding-top: 50px;
+  padding-top: clamp(10px, 13vw, 92px);
 
   @media screen and (min-width: $bp-tablet) {
     padding-top: 120px;
@@ -23,8 +23,10 @@
     position: relative;
     margin-bottom: 24px;
     line-height: 1.2;
+    max-width: 240px;
     @media screen and (min-width: $bp-tablet) {
       margin-bottom: 40px;
+      max-width: 100%;
     }
   }
 
@@ -61,6 +63,9 @@
     &__left {
       margin-top: 40px;
       margin-left: 172px;
+      @media screen and (min-width: 1200px) and (max-width: 1275px) {
+        margin-left: 132px;
+      }
     }
 
     &__star1,
@@ -69,21 +74,22 @@
       position: absolute;
     }
 
-    &__star2 {
-      top: 32px;
-      right: -24px;
-      animation: spin-star1 2s 3 linear 3s;
-    }
-    &__star3 {
-      top: 40%;
-      right: 5px;
-      animation: spin-star2 2s 3 ease-in-out 3s;
-    }
-
     &__star1 {
       top: 50%;
       left: 30%;
-      animation: spin-star3 2s 3 linear 3s;
+      animation: spin-star3 5s 1 linear 3s;
+    }
+
+    &__star2 {
+      top: 32px;
+      right: -24px;
+      animation: spin-star1 5s 1 linear 3s;
+    }
+
+    &__star3 {
+      top: 40%;
+      right: 5px;
+      animation: spin-star2 5s 1 ease-in-out 3s;
     }
 
     &__star-mobile-container {
