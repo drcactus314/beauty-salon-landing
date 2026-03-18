@@ -13,14 +13,23 @@ footer {
 
 .footer-section {
   padding: 56px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  justify-items: center;
+  grid-template-areas:
+    'logo'
+    'navig'
+    'policy'
+    'social'
+    'copyright';
 
   @media screen and (min-width: $bp-desktop) {
+    display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    grid-area: logo;
   }
 
   &__nav {
@@ -41,6 +50,7 @@ footer {
 
   &__address-container {
     max-width: 192px;
+    display: contents;
     &__items {
       display: none;
       @media screen and (min-width: $bp-desktop) {
@@ -54,6 +64,7 @@ footer {
   }
 
   &__socials {
+    grid-area: social;
     padding-top: 16px;
     display: flex;
     gap: 24px;
@@ -61,6 +72,7 @@ footer {
   }
 
   &__terms {
+    grid-area: copyright;
     text-align: center;
     padding-top: 16px;
     font-size: 12px;
@@ -72,6 +84,7 @@ footer {
   }
 
   &__policy {
+    grid-area: policy;
     text-align: center;
     padding-top: 16px;
     font-size: 14px;
@@ -95,3 +108,20 @@ footer {
     }
   }
 }
+
+ .footer-section > div:nth-child(2) {
+    grid-area: navig;
+  }
+
+  .footer-section > div:nth-child(4) {
+  display: contents;
+}
+
+@media screen and (min-width: $bp-desktop) {
+  
+  .footer-section > div:nth-child(3),
+  .footer-section > div:nth-child(4) {
+    display: block;
+  }
+}
+
